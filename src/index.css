@@ -35,7 +35,7 @@
 }
 
 /*For other devices*/
-@media (width < 700px) {
+@media (hover) and (width < 700px) {
   .main-container .plans-container {
     grid-auto-flow: row;
     grid-auto-columns: unset;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (width < 560px) {
+@media (hover) and (width < 560px) {
   .main-container .plans-container {
     width: 100vw;
     padding: 2rem 25vw;
