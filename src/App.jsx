@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div
-      className="main-container flex flex-col justify-center items-center max-w-screen max-h-screen h-screen pb-4 bg-gradient-to-b from-cyan-500 to-blue-500"
+      className="main-container flex flex-col justify-center items-center max-w-screen max-h-screen h-screen overflow-hidden pb-4 bg-gradient-to-b from-cyan-500 to-blue-500"
       style={{ fontFamily: "Montserrat" }}
     >
       <h5 className="header-text text-center text-white text-lg font-bold uppercase tracking-wider mt-6 mb-4 mx-5">
