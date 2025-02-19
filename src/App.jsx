@@ -1,14 +1,14 @@
 const App = () => {
   return (
     <div
-      className="main-container flex flex-col justify-center items-center max-w-screen max-h-screen h-screen bg-gradient-to-b from-cyan-500 to-blue-500"
+      className="main-container flex flex-col justify-center items-center max-w-screen max-h-screen h-screen pb-4 bg-gradient-to-b from-cyan-500 to-blue-500"
       style={{ fontFamily: "Montserrat" }}
     >
-      <h5 className="text-center text-white text-lg font-bold uppercase tracking-wider mt-6 mb-4">
+      <h5 className="header-text text-center text-white text-lg font-bold uppercase tracking-wider mt-6 mb-4 mx-5">
         Choose a plan that suits your needs
       </h5>
-      <div className="flex gap-5 h-full">
-        <div className="flex flex-col gap-8 h-4/5 items-center rounded-lg bg-white my-6 hover:scale-110 transition-all">
+      <div className="plans-container grid grid-flow-col auto-cols-max gap-5 h-max" style={{"scrollbar-width": "none", "-ms-overflow-style": "none"}}>
+        <div className="plan flex flex-col gap-8 h-max items-center rounded-lg bg-white my-6 hover:scale-110 transition-all">
           <div className="plan-name uppercase font-bold text-slate-400 bg-zinc-100 w-full text-center py-5 rounded-t-lg">
             Standard
           </div>
@@ -36,12 +36,12 @@ const App = () => {
           </div>
           <button
             type="button"
-            className="uppercase font-bold rounded-full bg-slate-400 text-white px-6 py-2 hover:bg-sky-400 transition-colors duration-500 mb-4"
+            className="uppercase font-bold rounded-full bg-slate-400 text-white px-6 py-2 hover:bg-sky-400 transition-colors duration-500 mb-7"
           >
             Start Now
           </button>
         </div>
-        <div className="flex flex-col gap-8 h-4/5 items-center rounded-lg bg-white my-6 hover:scale-110 transition-all">
+        <div className="plan flex flex-col gap-8 h-max items-center rounded-lg bg-white my-6 hover:scale-110 transition-all">
           <div className="plan-name uppercase font-bold text-slate-400 bg-zinc-100 w-full text-center py-5 rounded-t-lg">
             Platinum
           </div>
@@ -69,12 +69,12 @@ const App = () => {
           </div>
           <button
             type="button"
-            className="uppercase font-bold rounded-full bg-slate-400 text-white px-6 py-2 hover:bg-sky-600 transition-colors duration-500 mb-4"
+            className="uppercase font-bold rounded-full bg-slate-400 text-white px-6 py-2 hover:bg-sky-600 transition-colors duration-500  mb-7"
           >
             Start Now
           </button>
         </div>
-        <div className="flex flex-col gap-8 h-4/5 items-center rounded-lg bg-white my-6 hover:scale-110 transition-all">
+        <div className="plan flex flex-col gap-8 h-max items-center rounded-lg bg-white my-6 hover:scale-110 transition-all">
           <div className="plan-name uppercase font-bold bg-silver-200 text-slate-400 bg-zinc-100 w-full text-center py-5 rounded-t-lg">
             Silver
           </div>
@@ -102,7 +102,7 @@ const App = () => {
           </div>
           <button
             type="button"
-            className="uppercase font-bold rounded-full bg-slate-400 text-white px-6 py-2 hover:bg-sky-500 transition-colors duration-500 mb-4"
+            className="uppercase font-bold rounded-full bg-slate-400 text-white px-6 py-2 hover:bg-sky-500 transition-colors duration-500  mb-7"
           >
             Start Now
           </button>

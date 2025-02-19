@@ -4,20 +4,62 @@
 
 /* Thin scrollbar only for Webkit-based browsers*/
 ::-webkit-scrollbar {
-    width: 6px; /* Vertical scrollbar width */
-    height: 6px; /* Horizontal scrollbar height */
+  width: 6px; /* Vertical scrollbar width */
+  height: 6px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray; /* Thumb color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray; /* Track color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer; /* Thumb hover cursor */
+}
+
+/*For mobile/tab screens*/
+@media (hover: none) and (width < 700px) {
+  .main-container .plans-container {
+    width: 90vw;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    overflow-x: auto;
   }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: gray; /* Thumb color */
-    border-radius: 10px;
+  .main-container .plans-container::-webkit-scrollbar {
+    display: none;
   }
-  
-  ::-webkit-scrollbar-track {
-    background: lightgray; /* Track color */
+}
+
+/*For other devices*/
+@media (width < 700px) {
+  .main-container .plans-container {
+    grid-auto-flow: row;
+    grid-auto-columns: unset;
+    grid-auto-rows: max-content;
+    overflow-y: auto;
+    padding: 2rem 30vw;
   }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    cursor: pointer; /* Thumb hover cursor */
+  .main-container .plans-container::-webkit-scrollbar {
+    display: none;
   }
-  
+  .main-container .plans-container .plan {
+    margin: 0.5rem;
+  }
+  .main-container .header-text {
+    margin-bottom: 0;
+  }
+}
+
+@media (width < 560px) {
+  .main-container .plans-container {
+    width: 100vw;
+    padding: 2rem 25vw;
+  }
+  .main-container .plans-container .plan {
+   width: 100%;
+  }
+}
